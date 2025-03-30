@@ -11,9 +11,10 @@ function cargarMenu() {
                 const a = document.createElement("a");
 
                 if (item.name === "login") {
+                    a.classList.add("modal-trigger");
                     const icon = document.createElement("i");
                     icon.className = "material-icons"; // Cambia esto por la clase del ícono que desees
-                    icon.textContent = "login"; // Cambia esto por el nombre del ícono
+                    icon.textContent = "account_circle"; 
                     a.appendChild(icon);
                 } else {
                     a.textContent = item.name || item.icon || "Unnamed"; // Usa icon si no hay name

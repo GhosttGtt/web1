@@ -113,7 +113,10 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
             var sidenavInstances = M.Sidenav.init(sidenavElems);
             var modalInstances = M.Modal.init(modalElems);
           });
-          
+          document.addEventListener('DOMContentLoaded', function() {
+            var instance = M.Modal.getInstance(document.querySelector('#modal1'));
+            var elems = document.querySelectorAll('.modal-trigger');
+          });
           document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
@@ -126,7 +129,15 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
           });
       </script>
       <script src="js/sharon.js"></script>
-      
+      <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
 
     </body>
   </html>

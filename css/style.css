@@ -108,3 +108,6 @@ li.active {
     background: #263238;
     width: 100%;
 }
+ul li > a > i.material-icons{
+    font-size: 36px!important;
+}

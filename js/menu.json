@@ -2,23 +2,23 @@
   "menu": [
     {
     "name": "Inicio",
-    "url": "index.html"
+    "url": "index.php"
     },
     {
     "name": "Quienes Somos",
-    "url": "quienesSomos.html"
+    "url": "quienesSomos.php"
     },
     {
     "name": "Servicios",
-    "url": "servicios.html"
+    "url": "servicios.php"
     },
     {
     "name": "Acerca de",
-    "url": "acerca.html"
+    "url": "acerca.php"
     },
     {
     "name": "Contacto",
-    "url": "contacto.html"
+    "url": "contacto.php"
     },
     {
       "name": "|"
@@ -29,7 +29,7 @@
       "submenu": [
         {
         "name": "Iniciar sesión",
-        "url": "#"
+        "url": "#modal1"
         },
         {
         "name": "Registarse",
